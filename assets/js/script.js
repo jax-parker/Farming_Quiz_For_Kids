@@ -14,17 +14,31 @@ function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
 }
-//when start button is clicked - execute startGame
-
+//when start button is clicked - execute startGame, show next button after start & increment by one
+questionContainerElement.classList.add('hide');
+nextButton.classList.add('hide');
 startButton.addEventListener('click', startGame);
 console.log('started');
+nextButton.addEventListener('click', () => {
+    currentQuestionsIndex++;
+    setNextQuestion();
+})
+
 /**
- * Function to start the game
- */
+ * Function to start the game, hide start button, hide user input, set shuffled questions array,
+ *  set current questions index & show the next question*/
 function startGame() {
+    startButton.classList.add('hide');
+    userInput.classList.add('hide');
+    questionContainerElement.classList.remove('hide');
+    shuffledQuestions=questions.sort(() => Math.random() -0.5);
+    currentQuestionsIndex = 0;
+    setNextQuestion();
+}
+/** Function to set the next question */
+function setNextQuestion() {
 
 }
-
 /**
  * Function to set the next question
  */
