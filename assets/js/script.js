@@ -3,8 +3,8 @@ const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const scoreContainer = document.querySelector('.score-container');
 const questionContainerElement = document.getElementById('question-container');
-const answerButtons = document.getElementById('answer-buttons');
 const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 let shuffledQuestions, currentQuestionsIndex;
 
 /**
@@ -26,9 +26,9 @@ nextButton.addEventListener('click', () => {
  * Function to start the game, hide start button, hide user input, set shuffled questions array,
  *  set current questions index & show the next question*/
 function startGame() {
+    
     startButton.classList.add('hide');
     userInput.classList.add('hide');
-    
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionsIndex = 0;
     questionContainerElement.classList.remove('hide');
@@ -102,7 +102,7 @@ function selectAnswer() {
     } else {
         //let user restart
         questionContainerElement.classList.add('hide');
-        message.innerHTML = `You are going to be a great farmer, ${message}!`
+        message.innerHTML = 'You are going to be a great farmer, '+ userInput.value + ' !';
         startButton.innerText = 'Click here to play again';
         startButton.classList.remove('hide');
     }
