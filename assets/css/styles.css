@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans&display=swap');
 
 body {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: Open Sans, sans serif;
@@ -17,23 +17,66 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 .welcome-text {
     font-family: Caveat, cursive;
     font-size: 4rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     color: #006F2B;
     text-align: center;
 }
+
 .container {
     width: 800px;
     max-width: 80%;
     background-color: #fafafa;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     box-shadow: 0 0 10px 2px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin:auto;
-    margin-top:75px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.score-container {
+    width: 800px;
+    max-width: max-content;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 75px;
+}
+
+#question {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-grid {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+    margin:20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 3px solid #000000;
+    background-color: #006F2B;
+    border-radius: 5px;
+    padding:5px 10px;
+    color: #fafafa;
+    outline: none;
+    font-size: 1.5rem;
+}
+.btn:hover {
+    border-color: aquamarine;
+    box-shadow: 0 0 10px 2px;
+
 }
