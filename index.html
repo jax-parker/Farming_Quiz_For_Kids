@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,34 @@
     <title>Farming Quiz For Kids</title>
 </head>
 
-<body>
-    <h1>Hello World!</h1>
+<body class="game-bkd">
+    <h1 class="welcome-text">Farming Quiz For Kids!</h1>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <input id="userInput" placeholder="Enter Your Name">
+            <h1 id="message" class="welcome-text"></h1>
+            <button id="start-btn" class="start-btn btn" onclick="nameFunction()">Start</button>
+        </div>
+        <div class="controls-next">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div class="score-container">
+        <p class="scores-correct">Correct Answers</p>
+        <p class="scores-incorrect">Incorrect Answers</p>
+    </div>
+    <div>
+        <a id="'home-btn" href="index.html" class="hide">Return Home</a>
+    </div>
+
+    </div>
 </body>
+
 </html>
