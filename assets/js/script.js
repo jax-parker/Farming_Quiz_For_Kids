@@ -13,10 +13,12 @@ let shuffledQuestions, currentQuestionsIndex;
 function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
-}
+
+      }
 
 //when start button is clicked - execute startGame, show next button after start & increment by one
 startButton.addEventListener('click', startGame);
+//message.classList.add('hide');
 nextButton.addEventListener('click', () => {
     currentQuestionsIndex++;
     setNextQuestion();
@@ -26,9 +28,9 @@ nextButton.addEventListener('click', () => {
  * Function to start the game, hide start button, hide user input, set shuffled questions array,
  *  set current questions index & show the next question*/
 function startGame() {
-    
     startButton.classList.add('hide');
     userInput.classList.add('hide');
+    message.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionsIndex = 0;
     questionContainerElement.classList.remove('hide');
@@ -38,7 +40,6 @@ function startGame() {
 /** Function to set the next question, reset and show next question*/
 function setNextQuestion() {
     resetState();
-    //message.classList.add('hide');
     showQuestion(shuffledQuestions[currentQuestionsIndex]);
 }
 
@@ -58,6 +59,7 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
     });
+
 }
 
 /**
@@ -70,10 +72,29 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
+/**
+ * Function to select the correct answer & set loop limit
+ */
+
+function selectAnswer() {
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    if (shuffledQuestions.length > currentQuestionsIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        questionContainerElement.classList.add('hide');
+        message.classList.remove('hide');
+        message.innerHTML = 'You are going to be a great farmer, '+ userInput.value;
+        startButton.innerText = 'Click here to play again';
+        startButton.classList.remove('hide');
+        
+    }
+    }
 
 /**
  * Function to show if answer was correct or wrong, clear status of element, add correct/incorrect css*/
-function setStatusClass(element, correct) {
+ function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -89,24 +110,6 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
-/**
- * Function to select the correct answer & set loop limit
- */
-
-function selectAnswer() {
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
-    });
-    if (shuffledQuestions.length > currentQuestionsIndex + 1) {
-        nextButton.classList.remove('hide');
-    } else {
-        //let user restart
-        questionContainerElement.classList.add('hide');
-        message.innerHTML = 'You are going to be a great farmer, '+ userInput.value + ' !';
-        startButton.innerText = 'Click here to play again';
-        startButton.classList.remove('hide');
-    }
-}
 
 /*List of questions for quiz*/
 const questions = [{
