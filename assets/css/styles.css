@@ -99,7 +99,28 @@ body {
     color: #006F2B;
     padding: 10px 20px;
     text-align: center;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.scores-correct, .scores.incorrect {
+    font-size:1rem;
+    font-weight: bold;
+    padding:10px 20px;
+    background-color: #72D346;
+    color:#fafafa;
+    border: 1px solid #000000;
+}
+.scores-incorrect {
+    font-size:1rem;
+    font-weight: bold;
+    padding:10px 20px;
+    background-color: #FB1807;
+    color:#fafafa;
+    border: 1px solid #000000;
 }
 
 
