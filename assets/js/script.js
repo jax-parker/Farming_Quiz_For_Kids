@@ -3,8 +3,8 @@ const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const scoreContainer = document.querySelector('.score-container');
 const questionContainerElement = document.getElementById('question-container');
+const answerButtons = document.getElementById('answer-buttons');
 const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
 let shuffledQuestions, currentQuestionsIndex;
 
 /**
@@ -14,13 +14,13 @@ function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
 }
+
 //when start button is clicked - execute startGame, show next button after start & increment by one
-nextButton.classList.add('hide');
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionsIndex++;
     setNextQuestion();
-})
+});
 
 /**
  * Function to start the game, hide start button, hide user input, set shuffled questions array,
@@ -28,6 +28,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
     startButton.classList.add('hide');
     userInput.classList.add('hide');
+    
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionsIndex = 0;
     questionContainerElement.classList.remove('hide');
@@ -45,7 +46,7 @@ function setNextQuestion() {
  * Function to set the next question, loop through, make/set button text, add button class & check answer is correct
  * add css to buttons, event listener to button clicked and add to answer buttons element and remove old answers
  */
-function showQuestion() {
+function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -54,8 +55,20 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener.appendChild(button);
-    })
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
+}
+
+/**
+ * Function to clear answers and set the next question, hide next btn, loop through children of allour answer button elements
+ * if there is a child we want to remove it and the first child for it
+ */
+function resetState() {
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
 }
 
 /**
@@ -74,18 +87,6 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
-}
-
-
-/**
- * Function to clear answers and set the next question, hide next btn, loop through children of allour answer button elements
- * if there is a child we want to remove it and the first child for it
- */
-function resetState() {
-    nextButton.classList.add('hide');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
 }
 
 /**
