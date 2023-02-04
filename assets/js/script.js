@@ -75,5 +75,206 @@ function selectAnswer() {
 }
 
 /*List of questions for quiz*/
+const questions = [{
+    question: 'A day on the farm begins early. What animal crows when the sun comes up?',
+    answers: [{
+            text: 'Rooster',
+            correct: true
+        },
+        {
+            text: 'Cow',
+            correct: false
+        },
+        {
+            text: 'Horse',
+            correct: false
+        },
+        {
+            text: 'Sheep',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'One of the first chores of the day is to milk the ________?',
+    answers: [{
+            text: 'Pigs',
+            correct: false
+        },
+        {
+            text: 'Cows',
+            correct: true
+        },
+        {
+            text: 'Chickens',
+            correct: false
+        },
+        {
+            text: 'Horses',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'What is used on a farm to keep animals from wandering off and keep wild animals out?',
+    answers: [{
+            text: 'Post',
+            correct: false
+        },
+        {
+            text: 'Harness',
+            correct: false
+        },
+        {
+            text: 'Fence',
+            correct: true
+        },
+        {
+            text: 'House',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'If you are planting crops on your farm, what do you need to help plough the field?',
+    answers: [{
+            text: 'Hedge Trimmer',
+            correct: false
+        },
+        {
+            text: 'Lawnmower',
+            correct: false
+        },
+        {
+            text: 'Wagon',
+            correct: false
+        },
+        {
+            text: 'Tractor',
+            correct: true
+        },
+    ]
+},
+{
+    question: 'A farm that only grows crops is called what?',
+    answers: [{
+            text: 'Arable',
+            correct: true
+        },
+        {
+            text: 'Emmerdale',
+            correct: false
+        },
+        {
+            text: 'Lowland',
+            correct: false
+        },
+        {
+            text: 'Pastoral',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'When the crops are ripe, what must you do so that you can take them to market?',
+    answers: [{
+            text: 'Eat',
+            correct: false
+        },
+        {
+            text: 'Plant',
+            correct: false
+        },
+        {
+            text: 'Harvest',
+            correct: true
+        },
+        {
+            text: 'Prune',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'When we remove the wool from the sheep in the summer to keep them cool, it is called?',
+    answers: [{
+            text: 'Drilling',
+            correct: false
+        },
+        {
+            text: 'Shaving',
+            correct: false
+        },
+        {
+            text: 'Shearing',
+            correct: true
+        },
+        {
+            text: 'Clipping',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'Which animal on the farm lays eggs?',
+    answers: [{
+            text: 'Pig',
+            correct: false
+        },
+        {
+            text: 'Cow',
+            correct: false
+        },
+        {
+            text: 'Horse',
+            correct: false
+        },
+        {
+            text: 'Chicken',
+            correct: true
+        },
+    ]
+},
+{
+    question: 'Who helps the farmer round up the sheep?',
+    answers: [{
+            text: 'Rooster',
+            correct: false
+        },
+        {
+            text: 'Sheepdog',
+            correct: true
+        },
+        {
+            text: 'Chicken',
+            correct: false
+        },
+        {
+            text: 'Pig',
+            correct: false
+        },
+    ]
+},
+{
+    question: 'What does a farmer wear to keep their feet warm and dry?',
+    answers: [{
+            text: 'Slippers',
+            correct: false
+        },
+        {
+            text: 'Sandals',
+            correct: false
+        },
+        {
+            text: 'Trainers',
+            correct: false
+        },
+        {
+            text: 'Wellies',
+            correct: true
+        },
+    ]
+}
 
+];
 
