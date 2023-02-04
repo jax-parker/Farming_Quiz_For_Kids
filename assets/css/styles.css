@@ -78,5 +78,28 @@ body {
 .btn:hover {
     border-color: aquamarine;
     box-shadow: 0 0 10px 2px;
+}
+.btn.correct {
+    background-color: #72D346;
+    color:#fafafa;
+}
+.btn.wrong {
+    background-color: #FB1807;
+    color: #fafafa;
+}
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #a52a2a;
+    color:#fafafa;
+}
+#userInput {
+    font-size: 1.5rem;
+    color: #006F2B;
+    padding: 10px 20px;
+    text-align: center;
 
 }
+
+
