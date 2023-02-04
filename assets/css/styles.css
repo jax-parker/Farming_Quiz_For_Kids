@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans&display=swap');
+
 body {
-    background-color: blue;
+    padding:0;
+    margin:0;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans, sans serif;
 }
-h1 {
-    color:aliceblue;
+
+.game-bkd {
+    background-image: url(../images/farm-bkground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.welcome-text {
+    font-family: Caveat, cursive;
+    font-size: 4rem;
+    display:flex;
+    justify-content: center;
+    color: #006F2B;
+    text-align: center;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 0 0 10px 2px;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:75px;
 }
