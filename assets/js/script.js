@@ -15,10 +15,8 @@ function nameFunction() {
     let message = document.querySelector('#message');
 }
 //when start button is clicked - execute startGame, show next button after start & increment by one
-questionContainerElement.classList.add('hide');
 nextButton.classList.add('hide');
 startButton.addEventListener('click', startGame);
-console.log('started');
 nextButton.addEventListener('click', () => {
     currentQuestionsIndex++;
     setNextQuestion();
@@ -30,17 +28,19 @@ nextButton.addEventListener('click', () => {
 function startGame() {
     startButton.classList.add('hide');
     userInput.classList.add('hide');
-    questionContainerElement.classList.remove('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionsIndex = 0;
+    questionContainerElement.classList.remove('hide');
     setNextQuestion();
 }
+
 /** Function to set the next question, reset and show next question*/
 function setNextQuestion() {
     resetState();
     //message.classList.add('hide');
     showQuestion(shuffledQuestions[currentQuestionsIndex]);
 }
+
 /**
  * Function to set the next question, loop through, make/set button text, add button class & check answer is correct
  * add css to buttons, event listener to button clicked and add to answer buttons element and remove old answers
