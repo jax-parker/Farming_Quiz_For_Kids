@@ -14,7 +14,7 @@ function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
 
-      }
+}
 
 //when start button is clicked - execute startGame, show next button after start & increment by one
 startButton.addEventListener('click', startGame);
@@ -64,7 +64,7 @@ function showQuestion(question) {
 
 /**
  * Function to clear answers and set the next question, hide next btn, loop through children of allour answer button elements
- * if there is a child we want to remove it and the first child for it
+ * if there is a child I want to remove it and the first child for it
  */
 function resetState() {
     nextButton.classList.add('hide');
@@ -75,7 +75,6 @@ function resetState() {
 /**
  * Function to select the correct answer & set loop limit
  */
-
 function selectAnswer() {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -85,16 +84,15 @@ function selectAnswer() {
     } else {
         questionContainerElement.classList.add('hide');
         message.classList.remove('hide');
-        message.innerHTML = 'You are going to be a great farmer, '+ userInput.value;
+        message.innerHTML = 'You are going to be a great farmer, ' + userInput.value;
         startButton.innerText = 'Click here to play again';
         startButton.classList.remove('hide');
-        
     }
-    }
+}
 
 /**
  * Function to show if answer was correct or wrong, clear status of element, add correct/incorrect css*/
- function setStatusClass(element, correct) {
+function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
