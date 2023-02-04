@@ -20,7 +20,7 @@ body {
 
 .welcome-text {
     font-family: Caveat, cursive;
-    font-size: 4rem;
+    font-size: 7rem;
     display: flex;
     justify-content: center;
     color: #006F2B;
@@ -35,10 +35,10 @@ body {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-top: 75px;
-}
+   }
 
 .score-container {
     width: 800px;
@@ -48,10 +48,10 @@ body {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 #question {
@@ -67,7 +67,6 @@ body {
 }
 
 .btn {
-    /*--hue: var(--hue-neutral);*/
     border: 3px solid #000000;
     background-color: #006F2B;
     border-radius: 5px;
@@ -75,10 +74,11 @@ body {
     color: #fafafa;
     outline: none;
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 .btn:hover {
-    border-color: aquamarine;
-    box-shadow: 0 0 10px 2px;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px 3px;
 }
 .btn.correct {
     background-color: #72D346;
@@ -88,32 +88,46 @@ body {
     background-color: #FB1807;
     color: #fafafa;
 }
-.start-btn, .next-btn {
+.start-btn {
     font-size: 1.5rem;
     font-weight: bold;
+    letter-spacing: 1px;
     padding: 10px 20px;
     background-color: #a52a2a;
     color:#fafafa;
 }
+
 #userInput {
     font-size: 1.5rem;
     color: #006F2B;
     padding: 10px 20px;
     text-align: center;
 }
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #a52a2a;
+    color: #fafafa;
 }
 
-.scores-correct, .scores.incorrect {
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+  }
+
+.scores-correct {
     font-size:1rem;
     font-weight: bold;
     padding:10px 20px;
     background-color: #72D346;
     color:#fafafa;
     border: 1px solid #000000;
+    letter-spacing: 1px;
 }
 .scores-incorrect {
     font-size:1rem;
@@ -122,6 +136,7 @@ body {
     background-color: #FB1807;
     color:#fafafa;
     border: 1px solid #000000;
+    letter-spacing: 1px;
 }
 
 #home-btn {
@@ -136,14 +151,29 @@ body {
     width: max-content;
     margin-top:30px;
     text-decoration: none;
-    border: 2px, solid, #fff;
+    letter-spacing: 1px;
 }
+.message-text {
+    font-family: Caveat, cursive;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #006F2B;
+    text-align: center;
+}
+
 .hide{
     display:none;
 }
 
 /*Small screens*/
-@media all and (max-width:400px) {
+@media all and (max-width:520px) {
+    .welcome-text {
+        font-size: 4rem;
+    }
+    .message-text {
+        font-size: 2rem;
+    }
     .btn {
         font-size: 15px;
     }
@@ -156,6 +186,7 @@ body {
     }
     #userInput {
         font-size: 1rem;
+        max-width: max-content;
     }
 }
 
