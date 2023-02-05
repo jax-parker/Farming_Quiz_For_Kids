@@ -166,7 +166,7 @@ No elements should overlap another container div.
 
 All buttons should work with the appropriate function.
 
-## Accessibility
+## Accessibility Testing
 
 Accessibility has been taken into account throughout the design of this website to make it user friendly. This has been achieved by:<br>
   * Using semantic HTML
@@ -175,6 +175,17 @@ Accessibility has been taken into account throughout the design of this website 
   * Choosing bright contrasting colours to give clarity to navigation and readability. After running through Google Lighthouse    though the button colours were deemed inaccessable to readers so I used Deque University website to change the colours to a more accessible read. Webite can be found [here](https://dequeuniversity.com/rules/axe/4.4/color-contrast?utm_source=lighthouse&utm_medium=devtools)<br>
   * Google Lighthouse retest after colour changes<br>
   ![Google lighthouse](assets/readme-images/lighthouse-score.png) 
+  * To validate web accessibility the website was tested on [Wave](https://wave.webaim.org/). Aria labels were missing for the page and the input box so these were added and retested with no errors.
+  ![Wave](assets/readme-images/wave.png)
+
+ ## Validation Testing
+ * HTML - tested through the [W3C HTML Validator](https://validator.w3.org/) and showed an empty header but this is created in JavaScript therefore not amended.<br>
+ ![W3C HTML Test](assets/readme-images/html-checker.png)
+ * CSS - tested through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and no errors were found.<br>
+ ![W3C CSS Validator](assets/readme-images/css-checker.png)
+ * JavaScript - tested through the [Jshint.com](https://jshint.com) and no errors were found.<br>
+ ![Jshint Test](assets/readme-images/jshint-test.png)
+ 
 
 
 
