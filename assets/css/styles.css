@@ -82,11 +82,11 @@ body {
 }
 .btn.correct {
     background-color: #72D346;
-    color:#fafafa;
+    color:#000000;
 }
 .btn.wrong {
-    background-color: #FB1807;
-    color: #fafafa;
+    background-color: #FB6660;
+    color: #000000;
 }
 .start-btn {
     font-size: 1.5rem;
@@ -102,6 +102,7 @@ body {
     color: #006F2B;
     padding: 10px 20px;
     text-align: center;
+    border: 2px solid #006F2B;
 }
 
 .next-btn {
@@ -125,18 +126,22 @@ body {
     font-weight: bold;
     padding:10px 20px;
     background-color: #72D346;
-    color:#fafafa;
+    color:#000000;
     border: 1px solid #000000;
     letter-spacing: 1px;
+    border-radius: 5px;
+    gap:10px;
 }
 .scores-incorrect {
     font-size:1rem;
     font-weight: bold;
     padding:10px 20px;
-    background-color: #FB1807;
-    color:#fafafa;
+    background-color: #FB6660;
+    color:#000000;
     border: 1px solid #000000;
     letter-spacing: 1px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 #home-btn {
@@ -144,6 +149,8 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     background-color: #a52a2a;
+    border: 2px #000000 solid;
+    border-radius: 5px;
     color: #fafafa;
     display:flex;
     justify-content: center;
