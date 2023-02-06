@@ -176,7 +176,7 @@ body {
 /*Small screens*/
 @media all and (max-width:520px) {
     .welcome-text {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .message-text {
         font-size: 2rem;
