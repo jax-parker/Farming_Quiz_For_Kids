@@ -63,7 +63,7 @@
 
     * As a returning visitor, I want to be familiar with the site and use my experience to to navigate through the quiz.
     * As a returning visitor, I want to be see a personlised message to encourage me to play again.
-    * As a returning visitor,I want to use the site to improve my knowledge of farming.
+    * As a returning visitor, I want to use the site to improve my knowledge of farming.
     * As a returning visitor, I want the game to be responsive to my device, no matter what size or orientation my screen is.
 
 #### Frequent Visitor Goals
@@ -90,7 +90,7 @@ The purpose of this is to fulfil user story:<br>
 > As a first time visitor, I want to be able to understand how to navigate to the next question.<br>
 > As a first time visitor, I want to use the site to improve my knowledge of farming.<br>
 > As a returning  and frequent visitor, I want to be familiar with the site and use my experience to to navigate through the quiz.<br>
-> As a returning and frequent visitor, I want to use the site to improve m y knowledge of farming.<br>
+> As a returning and frequent visitor, I want to use the site to improve my knowledge of farming.<br>
 ![Question Section](assets/readme-images/question-section.png)
 
 ### The child will be able to see an encouraging message at the end of the game which is personalised to them. They will then have a choice to replay the game or navigate back to the start.
@@ -188,7 +188,7 @@ Accessibility has been taken into account throughout the design of this website 
 
 ## Function Testing
 The site was tested for responsiveness at [Am I Responsive Ready](https://amiresponsiveready.com/check/?url=https%3A%2F%2Fjax-parker.github.io%2FFarming_Quiz_For_Kids%2F) which shows the site, portrait and landscape on different types of platforms.
-**Validation tests were run as below for user experience.
+* Validation tests were run as below for user experience.
 ![Test Report](assets/readme-images/test-report-farming-quiz_Page_1.png)
 ![](assets/readme-images/test-report-farming-quiz_Page_2.png)
 ![](assets/readme-images/test-report-farming-quiz_Page_3.png)
@@ -197,6 +197,7 @@ The site was tested for responsiveness at [Am I Responsive Ready](https://amires
 * Responsiveness on small screens caused title to be lost on right edge. This was resolved by adjusting the rem size in media queries(CSS).
 * Yellow border was not big enough on selected answer. This was resolved by making the border pixels larger.
 * Correct/Incorrect buttons colour was deemed to be insufficient in contrast. This was resolved by using the Deque University website to find suitable colours and changed CSS.
+* Proof read though and amend spelling mistakes.
 
 ## Deployment
 
