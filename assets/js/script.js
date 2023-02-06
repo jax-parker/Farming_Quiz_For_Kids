@@ -70,7 +70,7 @@ function resetState() {
     }
 }
 /**
- * Function to select the correct answer & set loop limit
+ * Function to select the correct answer & set loop limit & delay message after last question
  */
 function selectAnswer() {
     Array.from(answerButtonsElement.children).forEach(button => {
