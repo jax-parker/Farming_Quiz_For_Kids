@@ -35,7 +35,7 @@
 
   # Project 2 Farming Quiz For Kids!
   ## Purpose
-  This website was created for the sole purpose of completing the second project for the Code Institues's Full Stack Developer Course. It was built using the knowledge gained from the HTML, CSS and JavaScript courses, Scrimba course and YouTube videos. A full list of technologies used can be found in the technologies section of this document. The Farming Quiz For Kids site was built as a simple quiz for children all about farming in order to teach children about farming whilst having fun playing. The site is targeted at children, using bright colours, fun images and simple questions on an easy to use interface which allows the child to navigate through the questions, play again or return to the home page. The page is personal, allowing the child to enter thier name and return it giving an encouraging message at the end of the game.
+  This website was created for the sole purpose of completing the second project for the Code Institues's Full Stack Developer Course. It was built using the knowledge gained from the HTML, CSS and JavaScript courses, Scrimba course and YouTube videos. A full list of technologies used can be found in the technologies section of this document. The Farming Quiz For Kids site was built as a simple quiz for children all about farming in order to teach children about farming whilst having fun playing. The site is targeted at children, using bright colours, fun images and simple questions on an easy to use interface which allows the child to navigate through the questions, play again or return to the home page. The page is personal, allowing the child to enter their name and return it giving an encouraging message at the end of the game.
 
   The live website can be found [here] (https://jax-parker.github.io/Farming_Quiz_For_Kids/).
 
@@ -158,7 +158,7 @@ After comparing the original wireframe designs to the finished website;
 ***
 # Testing
 
-#### Summary
+## Summary
 The live project can be found [Here](https://jax-parker.github.io/Farming_Quiz_For_Kids/)<br>
 This project is front end only with no back-end functionality, the testing performed will be on the visual effects, layout and the correct operation of the quiz. Testing to be done on at least three browsers and all screen sizes.
 
@@ -185,7 +185,7 @@ Accessibility has been taken into account throughout the design of this website 
  ![W3C CSS Validator](assets/readme-images/css-checker.png)
  * JavaScript - tested through the [Jshint.com](https://jshint.com) and no errors were found.<br>
  ![Jshint Test](assets/readme-images/jshint-test.png)
- 
+
 
 
 
