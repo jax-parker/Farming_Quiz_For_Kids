@@ -170,7 +170,7 @@ All buttons should work with the appropriate function.
 
 Accessibility has been taken into account throughout the design of this website to make it user friendly. This has been achieved by:<br>
   * Using semantic HTML
-  * Using a hover state on buttons to ensure clarity to the user of which one they are about to click.
+  * Using a border colour change to ensure user knows which answer was picked after answer colour styling.
   * Choosing a sans serif font for questions and instructions for easy to read purposes for children and children with dyslexsia.
   * Choosing bright contrasting colours to give clarity to navigation and readability. After running through Google Lighthouse    though the button colours were deemed inaccessable to readers so I used Deque University website to change the colours to a more accessible read. Webite can be found [here](https://dequeuniversity.com/rules/axe/4.4/color-contrast?utm_source=lighthouse&utm_medium=devtools)<br>
   * Google Lighthouse retest after colour changes<br>
@@ -186,6 +186,55 @@ Accessibility has been taken into account throughout the design of this website 
  * JavaScript - tested through the [Jshint.com](https://jshint.com) and no errors were found.<br>
  ![Jshint Test](assets/readme-images/jshint-test.png)
 
+## Function Testing
+The site was tested for responsiveness at [Am I Responsive Ready](https://amiresponsiveready.com/check/?url=https%3A%2F%2Fjax-parker.github.io%2FFarming_Quiz_For_Kids%2F) which shows the site, portrait and landscape on different types of platforms.
+**Validation tests were run as below for user experience.
+![Test Report](assets/readme-images/test-report-farming-quiz_Page_1.png)
+![](assets/readme-images/test-report-farming-quiz_Page_2.png)
+![](assets/readme-images/test-report-farming-quiz_Page_3.png)
 
+## Issues and Resolutions to issues found during testing
+* Responsiveness on small screens caused title to be lost on right edge. This was resolved by adjusting the rem size in media queries(CSS).
+* Yellow border was not big enough on selected answer. This was resolved by making the border pixels larger.
+* Correct/Incorrect buttons colour was deemed to be insufficient in contrast. This was resolved by using the Deque University website to find suitable colours and changed CSS.
 
+## Deployment
 
+### Project Creation
+The project was started by opening my Github profile page, clicking on repositories and new. I chose the Code-Institute-Org/gitpod-full-template from my template drop down box and named my repository Farming_Quiz_For_Kids. I checked the Public radio button and create repository. I clicked on the new repository, then clicked gitpod to open in a new workspace.
+
+The following commands were used throughout the project:
+
+* git add - Was used to add changes to the local repository.
+* git commit -m *commit message explaining the updates* - This command was used to commit changes to the local repository.
+* git push - This command is used to push all commited changes to the GitHub repository.
+
+### Using Github Pages
+1. Navigate to the GitHub [Repository:](https://jax-parker.github.io/Farming_Quiz_For_Kids)
+2. Click the 'Settings' Tab.
+3. Click on 'Pages.
+4. Select 'Main' as the branch.
+5. Click the Save button.
+6. Click on the link to go to the live deployed page. [Live Page:](https://jax-parker.github.io/Farming_Quiz_For_Kids)
+
+***
+## Credits
+### Code
+The html,css and javaScript code was learned from the Code Institute Full Stack Software Developer Course and by practising the Love Maths project.
+I also completed a Scrimba course on JavaScript (https://scrimba.com/learn/learnjavascript & https://javascript.info/first-steps) to bolster my knowledge as recommended by my mentor, Ronan McClelland.
+I also watched three YouTube tutorials - site addresses below:
+  * User Input and Response on a webpage using JavaScript(for beginners) - https://www.youtube.com/watch?v=KB6Yg5hNrqc
+  * How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2293s
+  * Build A Quiz App With JavaScript - https://www.youtube.com/watch?v=riDzcEQbX6k
+
+### Content
+The content of this software was created by Jakki Parker.
+
+### Media
+The images used in this video are property of Jakki Parker or under free license from the websites stated.
+
+### Acknowledgements
+
+I'd like to thank my mentor Ronan McClelland for his guidance throughout my project.<br>
+Thanks to family and friends who tested the site on iPhones, Samsungs, desktops and tablets.<br>
+Thanks also to my partner for putting up with my frustrations and bringing me endless cups of tea!<br>
