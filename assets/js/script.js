@@ -39,6 +39,16 @@ function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionsIndex]);
 }
+/**
+ * Function to clear answers and set the next question, hide next btn, loop through children of all our answer button elements
+ * if there is a child I want to remove it and the first child for it
+ */
+function resetState() {
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
 
 /**
  * Function to set the next question, loop through, make/set button text, add button class & check answer is correct
@@ -55,41 +65,39 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
+
     });
-
+    
 }
 
-/**
- * Function to clear answers and set the next question, hide next btn, loop through children of allour answer button elements
- * if there is a child I want to remove it and the first child for it
- */
-function resetState() {
-    nextButton.classList.add('hide');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
-}
 /**
  * Function to select the correct answer & set loop limit & delay message after last question
  */
-function selectAnswer() {
+function selectAnswer(e) {
+    const selectedAnswer = e.target;
+    const correctAnswer = selectedAnswer.dataset.correct;
+
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
-    
-    if  
-        (shuffledQuestions.length > currentQuestionsIndex + 1) {
-        nextButton.classList.remove('hide');
-        
-       
-    } else {
-        setTimeout(function() {
-        questionContainerElement.classList.add('hide');
-        message.classList.remove('hide');
-        {message.innerHTML = 'You are going to be a great farmer, ' + userInput.value
-        startButton.innerText = 'Click here to play again';
-        startButton.classList.remove('hide');}},1500);
+    if (correctAnswer){
+        incrementScore();
+    }else {
+        incrementWrongAnswer();
     }
+    if (shuffledQuestions.length > currentQuestionsIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+            setTimeout(function () {
+            questionContainerElement.classList.add('hide');
+            message.classList.remove('hide'); {
+            message.innerHTML = 'You are going to be a great farmer, ' + userInput.value
+            startButton.innerText = 'Click here to play again';
+            startButton.classList.remove('hide');
+            }
+        }, 1500);
+    }
+   
 }
 
 /**
@@ -98,9 +106,11 @@ function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
+
     } else {
         element.classList.add('wrong');
     }
+    
 }
 /**
  * Function to clear the status and remove css
@@ -108,8 +118,19 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
+    
+}
+// Increment correct score
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldScore;
 }
 
+//Increment incorrect score
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
+}
 
 /*List of questions for quiz*/
 const questions = [{
