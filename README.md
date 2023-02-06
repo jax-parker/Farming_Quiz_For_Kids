@@ -175,7 +175,7 @@ Accessibility has been taken into account throughout the design of this website 
   * Choosing bright contrasting colours to give clarity to navigation and readability. After running through Google Lighthouse    though the button colours were deemed inaccessable to readers so I used Deque University website to change the colours to a more accessible read. Webite can be found [here](https://dequeuniversity.com/rules/axe/4.4/color-contrast?utm_source=lighthouse&utm_medium=devtools)<br>
   * Google Lighthouse retest after colour changes<br>
   ![Google lighthouse](assets/readme-images/lighthouse-score.png) 
-  * To validate web accessibility the website was tested on [Wave](https://wave.webaim.org/). Aria labels were missing for the page and the input box so these were added and retested with one error for an empty H1 which is created in JavaScript so not amended.
+  * To validate web accessibility the website was tested on [Wave](https://wave.webaim.org/). Aria labels were missing for the page and the input box so these were added and retested with one error for an empty H1 which is created in JavaScript so not amended.<br>
   ![Wave](assets/readme-images/wave-report.png)
 
  ## Validation Testing
@@ -198,6 +198,7 @@ The site was tested for responsiveness at [Am I Responsive Ready](https://amires
 * Yellow border was not big enough on selected answer. This was resolved by making the border pixels larger.
 * Correct/Incorrect buttons colour was deemed to be insufficient in contrast. This was resolved by using the Deque University website to find suitable colours and changed CSS.
 * Proof read though and amend spelling mistakes.
+* No delay between the last question and the message. This was resolved by adding a setTimout to the question loop.
 
 ## Deployment
 
@@ -223,6 +224,7 @@ The following commands were used throughout the project:
 ### Code
 The html,css and javaScript code was learned from the Code Institute Full Stack Software Developer Course and by practising the Love Maths project.
 I also completed a Scrimba course on JavaScript (https://scrimba.com/learn/learnjavascript & https://javascript.info/first-steps) to bolster my knowledge as recommended by my mentor, Ronan McClelland.
+Set timeout was learned via this Stackoverflow question (https://stackoverflow.com/questions/14226803/wait-5-seconds-before-executing-next-line)
 I also watched three YouTube tutorials - site addresses below:
   * User Input and Response on a webpage using JavaScript(for beginners) - https://www.youtube.com/watch?v=KB6Yg5hNrqc
   * How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2293s
