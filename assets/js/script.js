@@ -7,17 +7,15 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 let shuffledQuestions, currentQuestionsIndex;
 
 /**
- * Collect name entered in input box by user
+ * Collect name entered in input box by user & when start button is clicked - execute startGame,
+ * show next button after start & increment by one
  */
 function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
-
 }
-
-//when start button is clicked - execute startGame, show next button after start & increment by one
 startButton.addEventListener('click', startGame);
-//message.classList.add('hide');
+
 nextButton.addEventListener('click', () => {
     currentQuestionsIndex++;
     setNextQuestion();
@@ -78,14 +76,19 @@ function selectAnswer() {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
-    if (shuffledQuestions.length > currentQuestionsIndex + 1) {
+    
+    if  
+        (shuffledQuestions.length > currentQuestionsIndex + 1) {
         nextButton.classList.remove('hide');
+        
+       
     } else {
+        setTimeout(function() {
         questionContainerElement.classList.add('hide');
         message.classList.remove('hide');
-        message.innerHTML = 'You are going to be a great farmer, ' + userInput.value;
+        {message.innerHTML = 'You are going to be a great farmer, ' + userInput.value
         startButton.innerText = 'Click here to play again';
-        startButton.classList.remove('hide');
+        startButton.classList.remove('hide');}},1500);
     }
 }
 
