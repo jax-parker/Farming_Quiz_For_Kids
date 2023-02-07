@@ -67,7 +67,7 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button);
 
     });
-    
+
 }
 
 /**
@@ -81,28 +81,28 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
-    if (correctAnswer){
+    if (correctAnswer) {
         incrementScore();
-    }else {
+    } else {
         incrementWrongAnswer();
     }
     if (shuffledQuestions.length > currentQuestionsIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-            setTimeout(function () {
+        setTimeout(function () {
             questionContainerElement.classList.add('hide');
             message.classList.remove('hide'); {
-            message.innerHTML = 'You are going to be a great farmer, ' + userInput.value;
-            startButton.innerText = 'Click here to play again';
-            startButton.classList.remove('hide');
-            startButton.addEventListener('click', () => {
-                document.getElementById('score').innerText = 0;
-                document.getElementById('incorrect').innerText = 0;
-            });
+                message.innerHTML = 'You are going to be a great farmer, ' + userInput.value;
+                startButton.innerText = 'Click here to play again';
+                startButton.classList.remove('hide');
+                startButton.addEventListener('click', () => {
+                    document.getElementById('score').innerText = 0;
+                    document.getElementById('incorrect').innerText = 0;
+                });
             }
         }, 1500);
     }
-   
+
 }
 
 /**
@@ -115,7 +115,7 @@ function setStatusClass(element, correct) {
     } else {
         element.classList.add('wrong');
     }
-    
+
 }
 /**
  * Function to clear the status and remove css
@@ -123,7 +123,7 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
-    
+
 }
 // Increment correct score
 function incrementScore() {

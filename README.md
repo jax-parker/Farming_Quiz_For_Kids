@@ -131,8 +131,9 @@ After comparing the original wireframe designs to the finished website;
 - The website has three sections, the start section where the player can enter their name, the question section, where the player can read and click on their choice of answer then click next for the next question and a message section, where the player gets a message which includes their name. The player can then replay the game or return to the start section where someone else can enter their name and play or they can play again.
 
 ### Features Left to Implement
-- Add scoring to the question section so the player knows which question they are on and how many are incorrect or correct.
-- Maybe add a high scores section that keeps a record of who has played and what score they achieved.
+- Play a tune when the play is sent the message.
+- Add a high scores section that keeps a record of who has played and what score they achieved so returning players can see what score they need to beat.
+-Add a question status bar so players can see what number question out of how many they are on.
 ***
 ## Technologies
 
@@ -141,7 +142,7 @@ After comparing the original wireframe designs to the finished website;
 * CSS
   * Is used to style the site, giving it colour and design.
 * JavaScript
-  * Is used for the functionality of the site allowing the player to enter their name, click through the questions and play again or return to the start.
+  * Is used for the functionality of the site allowing the player to enter their name, click through the questions, see their score and play again or return to the start.
 * MS Publisher
   * Used to create the wireframes as the free Balsamic license had expired.
 * [Google Fonts](https://fonts.google.com/)
@@ -172,7 +173,7 @@ All buttons should work with the appropriate function.
 ## Accessibility Testing
 
 Accessibility has been taken into account throughout the design of this website to make it user friendly. This has been achieved by:<br>
-  * Using semantic HTML
+  * Using semantic HTML and adding aria-labels where possible.
   * Using a border colour change to ensure user knows which answer was picked after answer colour styling.
   * Choosing a sans serif font for questions and instructions for easy to read purposes for children and children with dyslexsia.
   * Choosing bright contrasting colours to give clarity to navigation and readability. After running through Google Lighthouse    though the button colours were deemed inaccessable to readers so I used Deque University website to change the colours to a more accessible read. Webite can be found [here](https://dequeuniversity.com/rules/axe/4.4/color-contrast?utm_source=lighthouse&utm_medium=devtools)<br>
@@ -241,7 +242,6 @@ The content of this software was created by Jakki Parker.
 The images used in this video are property of Jakki Parker or under free license from the websites stated.
 
 ### Acknowledgements
-
-I'd like to thank my mentor Ronan McClelland for his guidance throughout my project.<br>
 Thanks to family and friends who tested the site on iPhones, Samsungs, desktops and tablets.<br>
 Thanks also to my partner for putting up with my frustrations and bringing me endless cups of tea!<br>
+I'd like to thank my mentor Ronan McClelland for his guidance throughout my project.<br>
