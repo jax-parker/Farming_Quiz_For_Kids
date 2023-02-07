@@ -15,7 +15,6 @@ function nameFunction() {
     let message = document.querySelector('#message');
 }
 startButton.addEventListener('click', startGame);
-
 nextButton.addEventListener('click', () => {
     currentQuestionsIndex++;
     setNextQuestion();
@@ -91,9 +90,13 @@ function selectAnswer(e) {
             setTimeout(function () {
             questionContainerElement.classList.add('hide');
             message.classList.remove('hide'); {
-            message.innerHTML = 'You are going to be a great farmer, ' + userInput.value
+            message.innerHTML = 'You are going to be a great farmer, ' + userInput.value;
             startButton.innerText = 'Click here to play again';
             startButton.classList.remove('hide');
+            startButton.addEventListener('click', () => {
+                document.getElementById('score').innerText = 0;
+                document.getElementById('incorrect').innerText = 0;
+            });
             }
         }, 1500);
     }

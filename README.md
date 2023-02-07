@@ -197,6 +197,7 @@ The site was tested for responsiveness at [Am I Responsive Ready](https://amires
 * Responsiveness on small screens caused title to be lost on right edge. This was resolved by adjusting the rem size in media queries(CSS).
 * Yellow border was not big enough on selected answer. This was resolved by making the border pixels larger.
 * Correct/Incorrect buttons colour was deemed to be insufficient in contrast. This was resolved by using the Deque University website to find suitable colours and changed CSS.
+* Scores did not reset when replay button was clicked. This was resolved by setting the inner text of the score/incorrect to zero.
 * Proof read though and amend spelling mistakes.
 * No delay between the last question and the message. This was resolved by adding a setTimout to the question loop.
 
