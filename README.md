@@ -244,4 +244,3 @@ The images used in this video are property of Jakki Parker or under free license
 ### Acknowledgements
 Thanks to family and friends who tested the site on iPhones, Samsungs, desktops and tablets.<br>
 Thanks also to my partner for putting up with my frustrations and bringing me endless cups of tea!<br>
-I'd like to thank my mentor Ronan McClelland for his guidance throughout my project.<br>

@@ -16,8 +16,8 @@
   <title>Farming Quiz For Kids</title>
 </head>
 
-<body class="game-bkd" aria-label="Farming Quiz For Kids">
-  <h1 class="welcome-text"> Farming Quiz For Kids!</h1>
+<body class="game-bkd" aria-label="Brightly coloured cartoon farm animals on a farm">
+  <h1 class="welcome-text" aria-label = "Farming Quiz For Kids Title"> Farming Quiz For Kids!</h1>
 
   <div class="container">
     <div id="question-container" class="hide">
@@ -33,10 +33,10 @@
       <input id="userInput" aria-label="Enter your name" placeholder="Enter Your Name">
       <h1 id="message" class="message-text hide"></h1>
 
-      <button id="start-btn" class="start-btn btn" onclick="nameFunction()">Start</button>
+      <button id="start-btn" aria-label ="click start button" class="start-btn btn" onclick="nameFunction()">Start</button>
     </div>
     <div class="controls-next">
-      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="next-btn" aria-label ="click next button" class="next-btn btn hide">Next</button>
     </div>
   </div>
   <div class="score-container">
@@ -44,7 +44,7 @@
     <p class="scores-incorrect">Incorrect Answers <span id="incorrect">0</span></p>
   </div>
   <div>
-    <a id="home-btn" class="hide" href="index.html">Return Home</a>
+    <a id="home-btn" aria-label="click go back to start button" class="hide" href="index.html">Return Home</a>
   </div>
 </body>
 

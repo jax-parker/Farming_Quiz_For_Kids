@@ -1,3 +1,7 @@
+/*Code learned from Web Dev simplified YouTube Tutorial - Build A Quiz App With JavaScript - https://www.youtube.com/watch?v=riDzcEQbX6k
+and How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for
+Beginners Tutorial - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2293s and Scrimba JavaScript Course*/
+
 /* grab elements from html*/
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
@@ -10,6 +14,9 @@ let shuffledQuestions, currentQuestionsIndex;
  * Collect name entered in input box by user & when start button is clicked - execute startGame,
  * show next button after start & increment by one
  */
+/*Code learned from User Input and Response on a webpage using
+JavaScript(for beginners) - https://www.youtube.com/watch?v=KB6Yg5hNrqc*/
+
 function nameFunction() {
     let userInput = document.querySelector('#userInput');
     let message = document.querySelector('#message');
@@ -70,10 +77,14 @@ function showQuestion(question) {
 
 }
 
+
 /**
  * Function to select the correct answer & set loop limit, delay message after last question and reset scores to zero
  * when Restart button is clicked.
  */
+/* Set timeout was learned via this
+Stackoverflow question (https://stackoverflow.com/questions/14226803/wait-5-seconds-before-executing-next-line)*/
+
 function selectAnswer(e) {
     const selectedAnswer = e.target;
     const correctAnswer = selectedAnswer.dataset.correct;
@@ -125,6 +136,7 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 
 }
+/*Code learned from Code Institute Full Stack Software Developer Course - Love Maths Project */
 // Increment correct score
 function incrementScore() {
     let oldScore = parseInt(document.getElementById('score').innerText);
