@@ -38,6 +38,7 @@ function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionsIndex]);
 }
+
 /**
  * Function to clear answers and set the next question, hide next btn, loop through children of all our answer button elements
  * if there is a child I want to remove it and the first child for it
@@ -70,7 +71,8 @@ function showQuestion(question) {
 }
 
 /**
- * Function to select the correct answer & set loop limit & delay message after last question
+ * Function to select the correct answer & set loop limit, delay message after last question and reset scores to zero
+ * when Restart button is clicked.
  */
 function selectAnswer(e) {
     const selectedAnswer = e.target;
@@ -104,7 +106,7 @@ function selectAnswer(e) {
 }
 
 /**
- * Function to show if answer was correct or wrong, clear status of element, add correct/incorrect css*/
+ * Function to show if answer was correct or incorrect, clear status of element, add correct/incorrect css*/
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {

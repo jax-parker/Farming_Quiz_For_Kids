@@ -52,7 +52,7 @@
     * As a first time visitor, I want to be able to immediately understand the main purpose of the application, "Farming Quiz For Kids!".
     * As a first time visitor, I want to be able to understand how to enter my name.
     * As a first time visitor, I want to be able to understand how to start the quiz.
-    * As a first time visitor, I want to be able to understand if my question was correct or incorrect.
+    * As a first time visitor, I want to be able to understand if my question was correct or incorrect & see my score.
     * As a first time visitor, I want to be able to understand how to navigate to the next question.
     * As a first time visitor, I want to be see a personlised message to encourage me to play again.
     * As a first time visitor, I want to be able to understand how to navigate back to the homepage or replay the quiz.
@@ -62,6 +62,7 @@
 #### Returning Visitor Goals
 
     * As a returning visitor, I want to be familiar with the site and use my experience to to navigate through the quiz.
+    * As a returning visitor, I want to be able to understand if my question was correct or incorrect & see my score.
     * As a returning visitor, I want to be see a personlised message to encourage me to play again.
     * As a returning visitor, I want to use the site to improve my knowledge of farming.
     * As a returning visitor, I want the game to be responsive to my device, no matter what size or orientation my screen is.
@@ -69,12 +70,13 @@
 #### Frequent Visitor Goals
 
     * As a frequent visitor, I want to be familiar with the site and use my experience to to navigate through the quiz.
+    * As a frequent visitor, I want to be able to understand if my question was correct or incorrect & see my score.
     * As a frequent visitor, I want to be see a personlised message to encourage me to play again.
     * As a frequent visitor, I want to use the site to improve my knowledge of farming.
     * As a frequent visitor, I want the game to be responsive to my device, no matter what size or orientation my screen is.
 
 ## Structure
-All pages will have big buttons with easy to read functions allowing you to navigate through the game easily and two bright buttons to explain if the answers are correct or incorrect with correlating colours with the answers when clicked on. The fonts will be easy to read. The background will be colourful with animated farm animals to appeal to children and the interface will be easy to use so that younger children can play too.
+All pages will have big buttons with easy to read functions allowing you to navigate through the game easily and two bright buttons to explain if the answers are correct or incorrect with correlating colours with the answers when clicked on. The fonts will be easy to read. The background will be colourful with cartoon farm animals to appeal to children and the interface will be easy to use so that younger children can play too.
 
 ### The child will be able to enter their name through the input box in order to receive and encouraging message at the end. 
 The purpose of this is to fulfil user story:<br>
@@ -86,10 +88,11 @@ The purpose of this is to fulfil user story:<br>
 
 ### The child will be able to clearly read the questions, click on an answer and use the colours of the boxes to match with the colours of the menu underneath to see if their answer was correct or incorrect.
 The purpose of this is to fulfil user story:<br>
-> As a first time visitor, I want to be able to understand if my question was correct or incorrect.<br>
+> As a first time visitor, I want to be able to understand if my question was correct or incorrect & see my score.<br>
 > As a first time visitor, I want to be able to understand how to navigate to the next question.<br>
 > As a first time visitor, I want to use the site to improve my knowledge of farming.<br>
 > As a returning  and frequent visitor, I want to be familiar with the site and use my experience to to navigate through the quiz.<br>
+> As a returning and frequent visitor, I want to be able to understand if my question was correct or incorrect & see my score.<br>
 > As a returning and frequent visitor, I want to use the site to improve my knowledge of farming.<br>
 ![Question Section](assets/readme-images/question-section.png)
 
