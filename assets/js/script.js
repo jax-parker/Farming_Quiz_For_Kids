@@ -18,7 +18,7 @@ let shuffledQuestions, currentQuestionsIndex;
 JavaScript(for beginners) - https://www.youtube.com/watch?v=KB6Yg5hNrqc*/
 
 function nameFunction() {
-    let userInput = document.querySelector('#userInput');
+    let userInput = document.querySelector('#userInput');   
     let message = document.querySelector('#message');
 }
 startButton.addEventListener('click', startGame);

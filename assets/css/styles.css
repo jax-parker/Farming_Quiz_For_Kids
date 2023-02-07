@@ -21,10 +21,19 @@ body {
 .welcome-text {
     font-family: Caveat, cursive;
     font-size: 7rem;
-    display: flex;
-    justify-content: center;
     color: #006F2B;
     text-align: center;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.question-number {
+    font-family: Caveat, cursive;
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:30px;
 }
 
 .container {
@@ -182,6 +191,9 @@ body {
 @media all and (max-width:520px) {
     .welcome-text {
         font-size: 3rem;
+    }
+    .question-number {
+        font-size:2rem;
     }
 
     .message-text {
