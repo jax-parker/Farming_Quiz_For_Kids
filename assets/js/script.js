@@ -1,4 +1,4 @@
-/*Code learned from Web Dev simplified YouTube Tutorial - Build A Quiz App With JavaScript - https://www.youtube.com/watch?v=riDzcEQbX6k
+/*Inspiration for this code was learned from Web Dev simplified YouTube Tutorial - Build A Quiz App With JavaScript - https://www.youtube.com/watch?v=riDzcEQbX6k
 and How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for
 Beginners Tutorial - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2293s and Scrimba JavaScript Course*/
 
@@ -14,7 +14,7 @@ let shuffledQuestions, currentQuestionsIndex;
  * Collect name entered in input box by user & when start button is clicked - execute startGame,
  * show next button after start & increment by one
  */
-/*Code learned from User Input and Response on a webpage using
+/*Inspiration for this code was learned from User Input and Response on a webpage using
 JavaScript(for beginners) - https://www.youtube.com/watch?v=KB6Yg5hNrqc*/
 
 function nameFunction() {
@@ -76,7 +76,6 @@ function showQuestion(question) {
     });
 
 }
-
 
 /**
  * Function to select the correct answer & set loop limit, delay message after last question and reset scores to zero
